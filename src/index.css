@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.app {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.board {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+}
+.column {
+  width: 18rem;
+  height: 100%;
+  background-color: black;
+  padding: 1rem;
+  border: 1px solid gainsboro;
+  border-radius: 0.8rem;
+}
+
+.column-inner:hover {
+  background-color: rgb(27, 26, 26);
+}
+
+.column-heading {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Card {
+  width: 100%;
+  height: max-content;
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: grab;
+  background-color: rgb(56, 55, 55);
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropIndicator {
+  height: 2px;
+  width: 100%;
+  background-color: purple;
+  opacity: 0;
+}
+
+.burnDarry {
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.7rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+textarea {
+  padding: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 0.6rem;
+}
+
+.deletbtn {
+  display: none;
+  
+  align-items: center;
+  justify-content: center;
+  
+}
+
+@media (max-width: 780px) {
+  .deletbtn {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
+  .burnDarry {
+    display: none;
+  }
+}
+
+
+@media (max-width:500px) {
+  .column{
+    width: 90%;
+  }
+}
